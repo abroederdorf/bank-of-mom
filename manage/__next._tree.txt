@@ -1,2 +1,2 @@
-:HL["/bank-of-mom/_next/static/chunks/0-qpkxq5jcnyi.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"manage","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"yzAwYuT1T52xWAgF7Rz3m"}
+:HL["/bank-of-mom/_next/static/chunks/0xlpnltciey2_.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"manage","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"WwpUNxiz0DIkDWPi3xM8f"}
