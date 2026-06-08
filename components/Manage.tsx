@@ -114,14 +114,14 @@ export default function Manage() {
             placeholder="Amount"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            className="border border-gray-300 rounded-lg px-3 py-2 text-sm w-32 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="border border-gray-300 rounded-lg px-3 py-2 text-sm w-32 focus:outline-none focus:ring-2 focus:ring-green-500 placeholder:text-gray-400 text-gray-900"
           />
           <input
             type="text"
             placeholder="Note (optional)"
             value={note}
             onChange={(e) => setNote(e.target.value)}
-            className="border border-gray-300 rounded-lg px-3 py-2 text-sm flex-1 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="border border-gray-300 rounded-lg px-3 py-2 text-sm flex-1 focus:outline-none focus:ring-2 focus:ring-green-500 placeholder:text-gray-400 text-gray-900"
           />
         </div>
         <div className="flex gap-2">
@@ -184,7 +184,7 @@ export default function Manage() {
             placeholder="Paste UID to add admin"
             value={newAdminUid}
             onChange={(e) => setNewAdminUid(e.target.value)}
-            className="border border-gray-300 rounded-lg px-3 py-2 text-sm flex-1 font-mono focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="border border-gray-300 rounded-lg px-3 py-2 text-sm flex-1 font-mono focus:outline-none focus:ring-2 focus:ring-green-500 placeholder:text-gray-400 text-gray-900"
           />
           <button
             disabled={!newAdminUid.trim() || busy}
