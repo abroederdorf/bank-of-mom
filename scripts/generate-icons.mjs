@@ -1,16 +1,20 @@
 import sharp from "sharp";
-import { readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const svg = readFileSync(join(__dirname, "../public/icon.svg"));
+const source = join(__dirname, "../public/icon-source.png");
 
-await sharp(svg).resize(192, 192).png().toFile(join(__dirname, "../public/icon-192.png"));
-console.log("✓ icon-192.png");
+// Android
+await sharp(source).resize(192, 192).png().toFile(join(__dirname, "../public/icon-192.png"));
+console.log("✓ icon-192.png (Android)");
 
-await sharp(svg).resize(512, 512).png().toFile(join(__dirname, "../public/icon-512.png"));
-console.log("✓ icon-512.png");
+await sharp(source).resize(512, 512).png().toFile(join(__dirname, "../public/icon-512.png"));
+console.log("✓ icon-512.png (Android maskable)");
 
-await sharp(svg).resize(180, 180).png().toFile(join(__dirname, "../public/apple-touch-icon.png"));
-console.log("✓ apple-touch-icon.png");
+// iOS
+await sharp(source).resize(180, 180).png().toFile(join(__dirname, "../public/apple-touch-icon.png"));
+console.log("✓ apple-touch-icon.png (iOS 180px)");
+
+await sharp(source).resize(152, 152).png().toFile(join(__dirname, "../public/apple-touch-icon-152.png"));
+console.log("✓ apple-touch-icon-152.png (iPad)");
