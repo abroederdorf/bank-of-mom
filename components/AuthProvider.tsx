@@ -22,8 +22,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return onAuthStateChanged(getFirebaseAuth(), async (u) => {
       setUser(u);
       if (u) {
-        const r = await getRole(u.uid);
-        setRole(r);
+        try {
+          const r = await getRole(u.uid);
+          setRole(r);
+        } catch {
+          setRole(null);
+        }
       } else {
         setRole(null);
       }
