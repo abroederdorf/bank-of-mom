@@ -2,4 +2,4 @@
 2:I[39756,["/bank-of-mom/_next/static/chunks/3gs4ndli8pwbk.js","/bank-of-mom/_next/static/chunks/3qdkgs8mz-w-1.js","/bank-of-mom/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
 3:I[37457,["/bank-of-mom/_next/static/chunks/3gs4ndli8pwbk.js","/bank-of-mom/_next/static/chunks/3qdkgs8mz-w-1.js","/bank-of-mom/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"PaaRHCB9_nmI02nIujZdm"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"T2VhRV1B8S2daWABkTaYk"}

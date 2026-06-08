@@ -23,5 +23,20 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "/bank-of-mom/screenshots/mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "label": "Account summary showing balance and interest"
+    },
+    {
+      "src": "/bank-of-mom/screenshots/desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Account summary on desktop"
+    }
   ]
 }
