@@ -46,7 +46,21 @@ export default function Dashboard() {
     );
   }
 
-  if (fetching || !account) {
+  if (fetching) {
+    return <p className="text-gray-500">Loading account…</p>;
+  }
+
+  if (!account || role === null) {
+    return (
+      <div className="mt-16 text-center space-y-3">
+        <p className="text-gray-600">You&apos;re signed in but not linked to this account yet.</p>
+        <p className="text-sm text-gray-400">Give this UID to an admin to get access:</p>
+        <p className="font-mono text-xs bg-gray-100 rounded px-3 py-2 inline-block select-all">{user.uid}</p>
+      </div>
+    );
+  }
+
+  if (!account) {
     return <p className="text-gray-500">Loading account…</p>;
   }
 
