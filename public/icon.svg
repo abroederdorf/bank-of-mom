@@ -1,18 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <!-- Green rounded background -->
   <rect width="512" height="512" rx="96" fill="#15803d"/>
-  <!-- Vault door outer ring -->
-  <circle cx="256" cy="272" r="168" fill="#166534" stroke="#4ade80" stroke-width="12"/>
-  <!-- Vault spokes -->
-  <line x1="256" y1="104" x2="256" y2="440" stroke="#4ade80" stroke-width="10" stroke-linecap="round"/>
-  <line x1="88" y1="272" x2="424" y2="272" stroke="#4ade80" stroke-width="10" stroke-linecap="round"/>
-  <line x1="137" y1="153" x2="375" y2="391" stroke="#4ade80" stroke-width="10" stroke-linecap="round"/>
-  <line x1="375" y1="153" x2="137" y2="391" stroke="#4ade80" stroke-width="10" stroke-linecap="round"/>
-  <!-- Vault inner circle -->
-  <circle cx="256" cy="272" r="60" fill="#15803d" stroke="#4ade80" stroke-width="10"/>
-  <!-- Vault handle -->
-  <rect x="356" y="252" width="72" height="40" rx="20" fill="#4ade80"/>
-  <!-- Dollar sign on top -->
-  <rect x="220" y="48" width="72" height="16" rx="8" fill="#4ade80"/>
-  <text x="256" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="900" text-anchor="middle" fill="#4ade80">$</text>
+
+  <!-- Body -->
+  <ellipse cx="240" cy="300" rx="168" ry="140" fill="#fda4af"/>
+
+  <!-- Head -->
+  <circle cx="378" cy="248" r="88" fill="#fda4af"/>
+
+  <!-- Ear -->
+  <ellipse cx="366" cy="166" rx="30" ry="40" fill="#f43f5e"/>
+  <ellipse cx="366" cy="170" rx="18" ry="26" fill="#fda4af"/>
+
+  <!-- Eye -->
+  <circle cx="408" cy="230" r="12" fill="#1f2937"/>
+  <circle cx="412" cy="226" r="4" fill="white"/>
+
+  <!-- Snout -->
+  <ellipse cx="450" cy="272" rx="36" ry="28" fill="#f43f5e"/>
+  <circle cx="441" cy="272" r="8" fill="#be123c"/>
+  <circle cx="459" cy="272" r="8" fill="#be123c"/>
+
+  <!-- Coin slot on top -->
+  <rect x="196" y="154" width="64" height="14" rx="7" fill="#be123c"/>
+
+  <!-- Coin dropping in -->
+  <ellipse cx="228" cy="148" rx="24" ry="14" fill="#fbbf24" stroke="#f59e0b" stroke-width="4"/>
+  <text x="228" y="154" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="900" text-anchor="middle" fill="#92400e">$</text>
+
+  <!-- Legs -->
+  <rect x="118" y="404" width="48" height="50" rx="16" fill="#fda4af"/>
+  <rect x="182" y="410" width="48" height="44" rx="16" fill="#fda4af"/>
+  <rect x="268" y="410" width="48" height="44" rx="16" fill="#fda4af"/>
+  <rect x="332" y="404" width="48" height="50" rx="16" fill="#fda4af"/>
+
+  <!-- Tail -->
+  <path d="M 74 290 Q 44 268 54 234 Q 64 200 88 218 Q 100 230 86 248" stroke="#f43f5e" stroke-width="14" fill="none" stroke-linecap="round"/>
 </svg>
