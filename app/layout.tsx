@@ -6,7 +6,7 @@ import Nav from "@/components/Nav";
 export const metadata: Metadata = {
   title: "Bank of Mom",
   description: "Your personal savings account",
-  manifest: "/manifest.json",
+  manifest: "/bank-of-mom/manifest.json",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
