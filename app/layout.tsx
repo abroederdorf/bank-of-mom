@@ -7,11 +7,22 @@ export const metadata: Metadata = {
   title: "Bank of Mom",
   description: "Your personal savings account",
   manifest: "/bank-of-mom/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Bank of Mom",
+  },
+  icons: {
+    apple: "/bank-of-mom/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#15803d" />
+      </head>
       <body className="bg-gray-50 min-h-screen antialiased">
         <AuthProvider>
           <Nav />

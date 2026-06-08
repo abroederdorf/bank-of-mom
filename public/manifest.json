@@ -4,7 +4,7 @@
   "description": "Your personal savings account",
   "start_url": "/bank-of-mom/",
   "display": "standalone",
-  "background_color": "#f9fafb",
+  "background_color": "#15803d",
   "theme_color": "#15803d",
   "icons": [
     {
@@ -15,7 +15,13 @@
     {
       "src": "/bank-of-mom/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/bank-of-mom/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }
