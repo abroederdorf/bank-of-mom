@@ -8,6 +8,8 @@ import {
   orderBy,
   getDocs,
   updateDoc,
+  arrayUnion,
+  arrayRemove,
 } from "firebase/firestore";
 import { getFirebaseDb } from "./firebase";
 import { Account, Transaction, TransactionType } from "./types";
@@ -126,7 +128,19 @@ export async function seedAccount(parentUid: string, childUid: string): Promise<
     pendingInterest: 0,
     pendingInterestEnabled: false,
     openedAt: "2026-06-06T00:00:00.000Z",
-    parentUid,
+    parentUids: [parentUid],
     childUid,
   } as Account);
+}
+
+export async function addAdmin(uid: string): Promise<void> {
+  await updateDoc(doc(db(), "account", ACCOUNT_ID), {
+    parentUids: arrayUnion(uid),
+  });
+}
+
+export async function removeAdmin(uid: string): Promise<void> {
+  await updateDoc(doc(db(), "account", ACCOUNT_ID), {
+    parentUids: arrayRemove(uid),
+  });
 }

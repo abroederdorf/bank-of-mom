@@ -15,7 +15,7 @@ export async function getRole(uid: string): Promise<"parent" | "child" | null> {
   const snap = await getDoc(doc(getFirebaseDb(), "account", "main"));
   if (!snap.exists()) return null;
   const data = snap.data();
-  if (data.parentUid === uid) return "parent";
+  if ((data.parentUids as string[])?.includes(uid)) return "parent";
   if (data.childUid === uid) return "child";
   return null;
 }

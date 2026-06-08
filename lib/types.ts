@@ -16,6 +16,6 @@ export interface Account {
   pendingInterest: number;
   pendingInterestEnabled: boolean;
   openedAt: string; // ISO string
-  parentUid: string;
+  parentUids: string[];
   childUid: string;
 }
