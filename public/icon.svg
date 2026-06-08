@@ -2,38 +2,22 @@
   <!-- Green rounded background -->
   <rect width="512" height="512" rx="96" fill="#15803d"/>
 
-  <!-- Body -->
-  <ellipse cx="240" cy="300" rx="168" ry="140" fill="#fda4af"/>
+  <!-- Coin stack - back -->
+  <ellipse cx="256" cy="360" rx="148" ry="36" fill="#b45309"/>
+  <rect x="108" y="280" width="296" height="80" fill="#b45309"/>
+  <ellipse cx="256" cy="280" rx="148" ry="36" fill="#d97706"/>
 
-  <!-- Head -->
-  <circle cx="378" cy="248" r="88" fill="#fda4af"/>
+  <!-- Coin stack - middle -->
+  <ellipse cx="256" cy="312" rx="148" ry="36" fill="#b45309"/>
+  <rect x="108" y="232" width="296" height="80" fill="#b45309"/>
+  <ellipse cx="256" cy="232" rx="148" ry="36" fill="#d97706"/>
 
-  <!-- Ear -->
-  <ellipse cx="366" cy="166" rx="30" ry="40" fill="#f43f5e"/>
-  <ellipse cx="366" cy="170" rx="18" ry="26" fill="#fda4af"/>
-
-  <!-- Eye -->
-  <circle cx="408" cy="230" r="12" fill="#1f2937"/>
-  <circle cx="412" cy="226" r="4" fill="white"/>
-
-  <!-- Snout -->
-  <ellipse cx="450" cy="272" rx="36" ry="28" fill="#f43f5e"/>
-  <circle cx="441" cy="272" r="8" fill="#be123c"/>
-  <circle cx="459" cy="272" r="8" fill="#be123c"/>
-
-  <!-- Coin slot on top -->
-  <rect x="196" y="154" width="64" height="14" rx="7" fill="#be123c"/>
-
-  <!-- Coin dropping in -->
-  <ellipse cx="228" cy="148" rx="24" ry="14" fill="#fbbf24" stroke="#f59e0b" stroke-width="4"/>
-  <text x="228" y="154" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="900" text-anchor="middle" fill="#92400e">$</text>
-
-  <!-- Legs -->
-  <rect x="118" y="404" width="48" height="50" rx="16" fill="#fda4af"/>
-  <rect x="182" y="410" width="48" height="44" rx="16" fill="#fda4af"/>
-  <rect x="268" y="410" width="48" height="44" rx="16" fill="#fda4af"/>
-  <rect x="332" y="404" width="48" height="50" rx="16" fill="#fda4af"/>
-
-  <!-- Tail -->
-  <path d="M 74 290 Q 44 268 54 234 Q 64 200 88 218 Q 100 230 86 248" stroke="#f43f5e" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Coin stack - front (top coin face) -->
+  <ellipse cx="256" cy="264" rx="148" ry="36" fill="#b45309"/>
+  <rect x="108" y="184" width="296" height="80" fill="#b45309"/>
+  <ellipse cx="256" cy="184" rx="148" ry="36" fill="#fbbf24"/>
+  <!-- Coin face shine ring -->
+  <ellipse cx="256" cy="184" rx="120" ry="28" fill="none" stroke="#fde68a" stroke-width="8"/>
+  <!-- Dollar sign on top coin -->
+  <text x="256" y="200" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="900" text-anchor="middle" dominant-baseline="middle" fill="#92400e">$</text>
 </svg>
