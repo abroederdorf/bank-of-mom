@@ -1,0 +1,21 @@
+{
+  "name": "Bank of Mom",
+  "short_name": "Bank of Mom",
+  "description": "Your personal savings account",
+  "start_url": "/bank-of-mom/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#15803d",
+  "icons": [
+    {
+      "src": "/bank-of-mom/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/bank-of-mom/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
