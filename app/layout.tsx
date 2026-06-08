@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     title: "Bank of Mom",
   },
   icons: {
-    apple: "/bank-of-mom/apple-touch-icon.png",
+    apple: [
+      { url: "/bank-of-mom/apple-touch-icon.png", sizes: "180x180" },
+      { url: "/bank-of-mom/apple-touch-icon-152.png", sizes: "152x152" },
+    ],
   },
 };
 
