@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/components/AuthProvider";
 import Nav from "@/components/Nav";
+import ServiceWorker from "@/components/ServiceWorker";
 
 export const metadata: Metadata = {
   title: "Bank of Mom",
   description: "Your personal savings account",
-  manifest: "/bank-of-mom/manifest.json",
+  manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -14,8 +15,8 @@ export const metadata: Metadata = {
   },
   icons: {
     apple: [
-      { url: "/bank-of-mom/apple-touch-icon.png", sizes: "180x180" },
-      { url: "/bank-of-mom/apple-touch-icon-152.png", sizes: "152x152" },
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+      { url: "/apple-touch-icon-152.png", sizes: "152x152" },
     ],
   },
 };
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-gray-50 min-h-screen antialiased">
         <AuthProvider>
+          <ServiceWorker />
           <Nav />
           <main className="max-w-2xl mx-auto px-4 py-6">{children}</main>
         </AuthProvider>
