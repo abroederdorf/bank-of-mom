@@ -145,8 +145,8 @@ export default function Manage() {
       <div className="bg-white rounded-lg border border-gray-200 p-5 space-y-3">
         <h2 className="font-semibold text-gray-700">Interest</h2>
         <p className="text-sm text-gray-500">
-          Interest posts automatically on the last day of each month.
-          Use the button below to post it manually (e.g., for testing).
+          Interest does not post automatically. Use the button below to post
+          it for the current month.
         </p>
         <button
           disabled={busy}
